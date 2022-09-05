@@ -118,23 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-var t = dom.find("#test")[0];
-console.log(dom.find(".red", t)); // 这里为什么没有段落标签4
 
-var t1 = dom.find("#test1")[0];
-console.log(dom.find(".red", t1)[0]);
-var t2 = dom.find("#test2")[0];
-console.log(dom.find(".blue", t2)[0]);
-dom.style(test1, {
-  border: "1px solid red",
-  color: "blue"
-});
-console.log(dom.style(test1, "border"));
-dom.style(t2, "color", "red");
-var t3 = dom.find("#test3")[0];
-dom.each(dom.children(t3), function (n) {
-  return dom.style(n, "color", "red");
-}); // 为什么无法实现
 },{}],"../../../../../Users/Candy/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -163,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49263" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
